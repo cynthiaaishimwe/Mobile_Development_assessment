@@ -1,18 +1,12 @@
 package com.cynthia.mobiledevelopmentassessment4.Api
 
+import com.cynthia.mobiledevelopmentassessment4.Model.Posts
 import com.cynthia.mobiledevelopmentassessment4.Model.PostsResponse
-import com.cynthia.mobiledevelopmentassessment4.Repository.UserRepository
+import retrofit2.Response
+import retrofit2.http.GET
 
 interface ApiInterface {
-//
-//        @GET("/posts")
-//        suspend fun getPosts(): Response<PostsResponse>
-//
-//        @GET("/posts")
-//        suspend fun getUser(): Response<UserRepository>
-
-
-                @GET("posts")
-                suspend fun getPosts(): List<Post>
+    @GET("posts")
+    suspend fun getPosts():Response<List<Posts>>
         }
 
